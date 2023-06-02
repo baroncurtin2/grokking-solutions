@@ -1,4 +1,6 @@
 export function isPangram(sentence) {
+	// time: O(n)
+    // space: O(1)
 	let chars = new Set();
 
 	for (const char of sentence.toLowerCase()) {

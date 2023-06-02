@@ -3,6 +3,8 @@ package warmup
 import "strings"
 
 func isPangram(sentence string) bool {
+	// time: O(n)
+    // space: O(1)
 	set := make(map[rune]bool)
 
 	for _, char := range strings.ToLower(sentence) {

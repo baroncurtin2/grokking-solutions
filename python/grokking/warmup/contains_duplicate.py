@@ -28,15 +28,4 @@ def contains_duplicate_sorting(nums: list[int]) -> bool:
     # space: O(n)
     nums = sorted(nums)
 
-<<<<<<< HEAD
     return any(nums[i] == nums[i + 1] for i in range(len(nums) - 1))
-
-
-__all__ = [
-    "contains_duplicate_brute_force",
-    "contains_duplicate_set",
-    "contains_duplicate_sorting",
-]
-=======
-    return any(nums[i] == nums[i + 1] for i in range(len(nums) - 1))
->>>>>>> bec3215e5202612a7cbf40221f34eec4941f0d5f

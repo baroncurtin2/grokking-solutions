@@ -1,4 +1,4 @@
-const { containsDuplicateBruteForce, containsDuplicateSet, containsDuplicateSorting } = require('../../src/warmup/containsDuplicate');
+import { containsDuplicateBruteForce, containsDuplicateSet, containsDuplicateSorting } from '../../src/warmup/containsDuplicate';
 
 describe('containsDuplicate.js', () => {
     const tests = [

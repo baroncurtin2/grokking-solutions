@@ -5,7 +5,7 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
-!rust/src/*
+!rust/src
 
 # Local History for Visual Studio Code
 .history/

@@ -879,4 +879,4 @@ cython_debug/
 #.idea/
 
 !rust/src/*
-rust/target
+rust/target/*

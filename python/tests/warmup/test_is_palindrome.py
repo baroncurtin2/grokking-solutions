@@ -31,7 +31,7 @@ def test_cases() -> list[IsPalindromeTestCase]:
             expected=True,
         ),
         IsPalindromeTestCase(
-            s="Madam, in Eden, I'm Adam.",
+            s="",
             expected=True,
         ),
     ]

@@ -8,7 +8,6 @@ def is_palindrome(s: str) -> bool:
             end -= 1
 
         if s[start].lower() != s[end].lower():
-            print(s[start].lower(), s[end].lower())
             return False
 
         start += 1

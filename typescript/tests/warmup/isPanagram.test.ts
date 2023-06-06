@@ -5,7 +5,7 @@ interface TestCase {
     readonly expected: boolean;
 }
 
-describe('isPangram.js', () => {
+describe('isPangram.ts', () => {
     const tests: Array<TestCase> = [
         {
             sentence: 'This is not a pangram',

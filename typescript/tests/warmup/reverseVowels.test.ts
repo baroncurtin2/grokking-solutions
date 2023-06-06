@@ -5,7 +5,7 @@ interface TestCase {
     readonly expected: string;
 }
 
-describe('reverseVowels.js', () => {
+describe('reverseVowels.ts', () => {
     const tests: Array<TestCase> = [
         {
             s: 'hello',

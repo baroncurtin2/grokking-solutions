@@ -9,7 +9,7 @@ interface TestCase {
 	readonly expected: boolean;
 }
 
-describe("containsDuplicate.js", () => {
+describe("containsDuplicate.ts", () => {
 	const tests: Array<TestCase> = [
 		{
 			nums: [1, 2, 3, 1],

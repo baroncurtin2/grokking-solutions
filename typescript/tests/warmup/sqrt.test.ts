@@ -5,7 +5,7 @@ interface TestCase {
     readonly expected: number;
 }
 
-describe('sqrt.js', () => {
+describe('sqrt.ts', () => {
     const tests: Array<TestCase> = [
         {
             num: 15,

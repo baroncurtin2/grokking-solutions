@@ -1,6 +1,6 @@
 import {shortestDistance} from "../../src/warmup/shortestWordDistance";
 
-describe('shortestWordDistance.js', () => {
+describe('shortestWordDistance.ts', () => {
     interface TestCase {
         readonly words: string[],
         readonly word1: string,

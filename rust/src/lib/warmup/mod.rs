@@ -5,3 +5,4 @@ pub mod reverse_vowels;
 pub mod valid_palindrome;
 pub mod valid_anagram;
 pub mod shortest_distance;
+pub mod num_good_pairs;

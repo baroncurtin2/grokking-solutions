@@ -1,4 +1,4 @@
-def remove_duplicates(arr: list[int]) -> list[int]:
+def remove_duplicates(arr: list[int]) -> int:
     # time: O(n)
     # space: O(1)
     if len(arr) <= 1:

@@ -27,4 +27,5 @@ def test_cases() -> list[SearchTripletsTestCase]:
 
 def test_search_triplets(test_cases) -> None:
     for tc in test_cases:
+        print(search_triplets(tc.arr), tc.expected)
         assert search_triplets(tc.arr) == tc.expected

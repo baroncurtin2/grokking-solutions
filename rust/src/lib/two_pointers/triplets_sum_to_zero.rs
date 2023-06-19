@@ -45,7 +45,6 @@ fn search_pair(arr: &[i32], target: i32, mut left: usize, triplets: &mut Vec<[i3
 #[cfg(test)]
 mod tests {
     use super::*;
-    use assert_eq::assert_eq;
 
     #[derive(Debug, PartialEq)]
     struct TestCase {
@@ -67,7 +66,9 @@ mod tests {
         ];
 
         for (idx, test) in tests.iter().enumerate() {
-            let result = search_triplets(&test.arr);
+            let mut arr = test.arr.clone();
+            let result = search_triplets(arr.as_mut_slice());
+
             assert_eq!(test.expected.len(), result.len());
             for expected in &test.expected {
                 assert!(result.contains(expected));

@@ -1,6 +1,6 @@
-import {pairWithTargetSum} from "../../src/two_pointers/pairWithTarget";
+import { pairWithTargetSum } from "../../src/two_pointers/pairWithTarget";
 
-describe('pairWithTarget.js', () => {
+describe("pairWithTarget.js", () => {
     const tests = [
         {
             arr: [1, 2, 3, 4, 6],
@@ -16,7 +16,9 @@ describe('pairWithTarget.js', () => {
 
     tests.forEach((test, idx) => {
         it(`testCase: ${idx}`, () => {
-            expect(pairWithTargetSum(test.arr, test.targetSum)).toStrictEqual(test.expected);
-        })
+            expect(pairWithTargetSum(test.arr, test.targetSum)).toStrictEqual(
+                test.expected
+            );
+        });
     });
-})
+});

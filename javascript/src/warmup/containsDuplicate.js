@@ -1,45 +1,49 @@
 function containsDuplicateBruteForce(nums) {
-	// time: O(n^2)
-	// space: O(1)
+    // time: O(n^2)
+    // space: O(1)
 
-	for (let i = 0; i < nums.length; i++) {
-		for (let j = i + 1; j < nums.length; j++) {
-			if (nums[i] === nums[j]) {
-				return true;
-			}
-		}
-	}
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] === nums[j]) {
+                return true;
+            }
+        }
+    }
 
-	return false;
+    return false;
 }
 
 function containsDuplicateSet(nums) {
-	// time: O(n)
-	// space: O(n)
-	let uniques = new Set();
+    // time: O(n)
+    // space: O(n)
+    let uniques = new Set();
 
-	for (const num of nums) {
-		if (uniques.has(num)) {
-			return true;
-		}
+    for (const num of nums) {
+        if (uniques.has(num)) {
+            return true;
+        }
 
-		uniques.add(num);
-	}
+        uniques.add(num);
+    }
 
-	return false;
+    return false;
 }
 
 function containsDuplicateSorting(nums) {
-	// time: O(nlogn)
-	// space: O(n)
-	nums.sort();
+    // time: O(nlogn)
+    // space: O(n)
+    nums.sort();
 
-	for (let i = 0; i < nums.length - 1; i++) {
-		if (nums[i] == nums[i + 1]) {
-			return true;
-		}
-	}
-	return false;
+    for (let i = 0; i < nums.length - 1; i++) {
+        if (nums[i] == nums[i + 1]) {
+            return true;
+        }
+    }
+    return false;
 }
 
-export { containsDuplicateBruteForce, containsDuplicateSet, containsDuplicateSorting };
+export {
+    containsDuplicateBruteForce,
+    containsDuplicateSet,
+    containsDuplicateSorting,
+};

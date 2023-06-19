@@ -1,6 +1,6 @@
 export function searchTriplets(arr) {
     let triplets = [];
-    arr.sort()
+    arr.sort();
 
     for (let i = 0; i < arr.length; i++) {
         if (i > 0 && arr[i] == arr[i - 1]) continue;
@@ -22,7 +22,7 @@ function searchPair(arr, target, left, triplets) {
         } else if (total > target) {
             right--;
         } else {
-            triplets.push([-target, arr[left], arr[right]])
+            triplets.push([-target, arr[left], arr[right]]);
             left++;
             right--;
 

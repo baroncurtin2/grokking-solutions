@@ -1,6 +1,10 @@
-import { containsDuplicateBruteForce, containsDuplicateSet, containsDuplicateSorting } from '../../src/warmup/containsDuplicate';
+import {
+    containsDuplicateBruteForce,
+    containsDuplicateSet,
+    containsDuplicateSorting,
+} from "../../src/warmup/containsDuplicate";
 
-describe('containsDuplicate.js', () => {
+describe("containsDuplicate.js", () => {
     const tests = [
         {
             nums: [1, 2, 3, 1],
@@ -17,6 +21,6 @@ describe('containsDuplicate.js', () => {
             expect(containsDuplicateBruteForce(test.nums)).toBe(test.expected);
             expect(containsDuplicateSet(test.nums)).toBe(test.expected);
             expect(containsDuplicateSorting(test.nums)).toBe(test.expected);
-        })
+        });
     });
 });

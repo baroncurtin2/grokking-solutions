@@ -1,30 +1,30 @@
-import {isAnagram} from "../../src/warmup/validAnagram";
+import { isAnagram } from "../../src/warmup/validAnagram";
 
-describe('validAnagram.js', () => {
+describe("validAnagram.js", () => {
     const tests = [
         {
-            s: 'listen',
-            t: 'silent',
+            s: "listen",
+            t: "silent",
             expected: true,
         },
         {
-            s: 'hello',
-            t: 'world',
+            s: "hello",
+            t: "world",
             expected: false,
         },
         {
-            s: 'anagram',
-            t: 'nagaram',
+            s: "anagram",
+            t: "nagaram",
             expected: true,
         },
         {
-            s: 'rat',
-            t: 'car',
+            s: "rat",
+            t: "car",
             expected: false,
         },
         {
-            s: '',
-            t: '',
+            s: "",
+            t: "",
             expected: true,
         },
     ];
@@ -32,6 +32,6 @@ describe('validAnagram.js', () => {
     tests.forEach((test, idx) => {
         it(`testCase: ${idx}`, () => {
             expect(isAnagram(test.s, test.t)).toBe(test.expected);
-        })
+        });
     });
-})
+});

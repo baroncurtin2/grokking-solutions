@@ -1,17 +1,17 @@
-import {isPalindrome} from "../../src/warmup/validPalindrome";
+import { isPalindrome } from "../../src/warmup/validPalindrome";
 
-describe('validPalindrome.js', () => {
+describe("validPalindrome.js", () => {
     const tests = [
         {
-            s: 'A man, a plan, a canal, Panama!',
+            s: "A man, a plan, a canal, Panama!",
             expected: true,
         },
         {
-            s: 'race a car',
+            s: "race a car",
             expected: false,
         },
         {
-            s: 'Was it a car or a cat I saw?',
+            s: "Was it a car or a cat I saw?",
             expected: true,
         },
         {
@@ -19,7 +19,7 @@ describe('validPalindrome.js', () => {
             expected: true,
         },
         {
-            s: '',
+            s: "",
             expected: true,
         },
     ];
@@ -27,6 +27,6 @@ describe('validPalindrome.js', () => {
     tests.forEach((test, idx) => {
         it(`testCase: ${idx}`, () => {
             expect(isPalindrome(test.s)).toBe(test.expected);
-        })
-    })
+        });
+    });
 });

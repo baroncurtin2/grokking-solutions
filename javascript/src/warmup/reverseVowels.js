@@ -1,23 +1,23 @@
 export function reverseVowels(s) {
-	const vowels = "aeiouAEIOU";
-	let start = 0,
-		end = s.length - 1;
-	let result = s.split("");
+    const vowels = "aeiouAEIOU";
+    let start = 0,
+        end = s.length - 1;
+    let result = s.split("");
 
-	while (start < end) {
-		while (start < end && vowels.indexOf(result[start]) === -1) {
-			start++;
-		}
+    while (start < end) {
+        while (start < end && vowels.indexOf(result[start]) === -1) {
+            start++;
+        }
 
-		while (start < end && vowels.indexOf(result[end]) === -1) {
-			end--;
-		}
+        while (start < end && vowels.indexOf(result[end]) === -1) {
+            end--;
+        }
 
-		[result[start], result[end]] = [result[end], result[start]];
+        [result[start], result[end]] = [result[end], result[start]];
 
-		start++;
-		end--;
-	}
+        start++;
+        end--;
+    }
 
-	return result.join("");
+    return result.join("");
 }

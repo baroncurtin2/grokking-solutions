@@ -1,13 +1,13 @@
-import { isPangram } from '../../src/warmup/isPangram';
+import { isPangram } from "../../src/warmup/isPangram";
 
-describe('isPangram.js', () => {
+describe("isPangram.js", () => {
     const tests = [
         {
-            sentence: 'This is not a pangram',
+            sentence: "This is not a pangram",
             expected: false,
         },
         {
-            sentence: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            sentence: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
             expected: true,
         },
     ];
@@ -15,6 +15,6 @@ describe('isPangram.js', () => {
     tests.forEach((test, idx) => {
         it(`testCase: ${idx}`, () => {
             expect(isPangram(test.sentence)).toBe(test.expected);
-        })
+        });
     });
-})
+});

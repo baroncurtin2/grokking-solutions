@@ -1,7 +1,10 @@
-import {removeDuplicates, removeAllKeys} from "../../src/two_pointers/removeDuplicates";
+import {
+    removeDuplicates,
+    removeAllKeys,
+} from "../../src/two_pointers/removeDuplicates";
 
-describe('removeDuplicates.js', () => {
-    describe('removeDuplicates test', () => {
+describe("removeDuplicates.js", () => {
+    describe("removeDuplicates test", () => {
         const tests = [
             {
                 arr: [2, 3, 3, 3, 6, 9, 9],
@@ -12,13 +15,13 @@ describe('removeDuplicates.js', () => {
                 expected: 2,
             },
         ];
-        
-        test.each(tests)('removeDuplicates(%j)', ({arr, expected}) => {
+
+        test.each(tests)("removeDuplicates(%j)", ({ arr, expected }) => {
             expect(removeDuplicates(arr)).toStrictEqual(expected);
         });
     });
 
-    describe('removeAllKeys test', () => {
+    describe("removeAllKeys test", () => {
         const tests = [
             {
                 arr: [3, 2, 3, 6, 3, 10, 9, 3],
@@ -31,8 +34,8 @@ describe('removeDuplicates.js', () => {
                 expected: 2,
             },
         ];
-        
-        test.each(tests)('removeAllKeys(%j, %i)', ({arr, key, expected}) => {
+
+        test.each(tests)("removeAllKeys(%j, %i)", ({ arr, key, expected }) => {
             expect(removeAllKeys(arr, key)).toStrictEqual(expected);
         });
     });

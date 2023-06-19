@@ -1,14 +1,22 @@
-import {searchTriplets} from "../../src/two_pointers/tripletsSumToZero";
+import { searchTriplets } from "../../src/two_pointers/tripletsSumToZero";
 
-describe('tripletsSumToZero.js', () => {
+describe("tripletsSumToZero.js", () => {
     const tests = [
         {
             arr: [-3, 0, 1, 2, -1, 1, -2],
-            expected: [[-3, 1, 2], [-2, 0, 2], [-2, 1, 1], [-1, 0, 1]],
+            expected: [
+                [-3, 1, 2],
+                [-2, 0, 2],
+                [-2, 1, 1],
+                [-1, 0, 1],
+            ],
         },
         {
             arr: [-5, 2, -1, -2, 3],
-            expected: [[-5, 2, 3], [-2, -1, 3]],
+            expected: [
+                [-5, 2, 3],
+                [-2, -1, 3],
+            ],
         },
     ];
 
@@ -17,8 +25,10 @@ describe('tripletsSumToZero.js', () => {
             const result = searchTriplets(test.arr);
             expect(result.length).toBe(test.expected.length);
             test.expected.forEach((expectedArr) => {
-                expect(result).toContainEqual(expect.arrayContaining(expectedArr));
+                expect(result).toContainEqual(
+                    expect.arrayContaining(expectedArr)
+                );
             });
         });
     });
-})
+});

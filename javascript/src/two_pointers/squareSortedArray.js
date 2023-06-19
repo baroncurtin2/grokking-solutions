@@ -3,10 +3,12 @@ export function makeSquares(arr) {
     let highSqIdx = n - 1;
     let squares = Array(n).fill(0);
 
-    let left = 0, right = n - 1;
+    let left = 0,
+        right = n - 1;
 
     while (left <= right) {
-        const leftSq = arr[left] * arr[left], rightSq = arr[right] * arr[right];
+        const leftSq = arr[left] * arr[left],
+            rightSq = arr[right] * arr[right];
 
         if (leftSq > rightSq) {
             squares[highSqIdx] = leftSq;

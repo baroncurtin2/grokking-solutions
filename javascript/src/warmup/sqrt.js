@@ -1,6 +1,6 @@
 export function mySqrt(x) {
     if (x < 2) {
-      return x;
+        return x;
     }
 
     let left = 2;

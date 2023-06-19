@@ -1,6 +1,6 @@
 import { mySqrt } from "../../src/warmup/sqrt";
 
-describe('sqrt.js', () => {
+describe("sqrt.js", () => {
     const tests = [
         {
             num: 15,
@@ -15,6 +15,6 @@ describe('sqrt.js', () => {
     tests.forEach((test, idx) => {
         it(`testCase: ${idx}`, () => {
             expect(mySqrt(test.num)).toBe(test.expected);
-        })
+        });
     });
 });

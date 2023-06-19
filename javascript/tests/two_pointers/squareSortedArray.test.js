@@ -1,6 +1,6 @@
-import {makeSquares} from "../../src/two_pointers/squareSortedArray";
+import { makeSquares } from "../../src/two_pointers/squareSortedArray";
 
-describe('squareSortedArray.js', () => {
+describe("squareSortedArray.js", () => {
     const tests = [
         {
             arr: [-2, -1, 0, 2, 3],
@@ -12,7 +12,7 @@ describe('squareSortedArray.js', () => {
         },
     ];
 
-    test.each(tests)('makeSquares(%j', ({arr, expected}) => {
+    test.each(tests)("makeSquares(%j", ({ arr, expected }) => {
         expect(makeSquares(arr)).toStrictEqual(expected);
     });
 });

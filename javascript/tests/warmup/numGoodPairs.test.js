@@ -1,6 +1,6 @@
-import {numGoodPairs} from "../../src/warmup/numGoodPairs";
+import { numGoodPairs } from "../../src/warmup/numGoodPairs";
 
-describe('numGoodPairs.js', () => {
+describe("numGoodPairs.js", () => {
     const tests = [
         {
             nums: [1, 2, 3],
@@ -19,6 +19,6 @@ describe('numGoodPairs.js', () => {
     tests.forEach((test, idx) => {
         it(`testCase: ${idx}`, () => {
             expect(numGoodPairs(test.nums)).toBe(test.expected);
-        })
+        });
     });
-})
+});

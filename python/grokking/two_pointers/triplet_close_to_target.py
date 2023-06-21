@@ -2,6 +2,8 @@ import math
 
 
 def triplet_sum_close_to_target(arr: list[int], target_sum: int) -> int:
+    # time: O(N^2)
+    # space: O(N)
     sorted_arr = sorted(arr)
 
     smallest_diff = math.inf

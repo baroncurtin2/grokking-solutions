@@ -25,6 +25,31 @@ def test_cases() -> list[SearchTripletsTestCase]:
             target=5,
             expected=4,
         ),
+        SearchTripletsTestCase(
+            arr=[1, 2, 3, 4, 5],
+            target=10,
+            expected=6,
+        ),
+        SearchTripletsTestCase(
+            arr=[0, 0, 0, 0, 0],
+            target=1,
+            expected=10,
+        ),
+        SearchTripletsTestCase(
+            arr=[-1, -1, -1, 1, 1, 1],
+            target=1,
+            expected=10,
+        ),
+        SearchTripletsTestCase(
+            arr=[-2, -1, 0, 1, 2],
+            target=3,
+            expected=9,
+        ),
+        SearchTripletsTestCase(
+            arr=[1, 2, 3, 4, 5],
+            target=6,
+            expected=0,
+        ),
     ]
 
 
